@@ -74,35 +74,6 @@ let opposite = not true      // false
 - `sqrt(number)` - Calculate square root
 - `abs(number)` - Get absolute value
 
-## Project Structure
-
-```
-flux-lang/
-├── src/                     # Source files
-│   ├── main.cpp            # Main interpreter driver
-│   ├── lexer.h/cpp         # Tokenizer implementation
-│   ├── parser.h/cpp        # Parser implementation
-│   ├── ast.h/cpp           # AST node definitions
-│   └── interpreter.h/cpp   # Interpreter implementation
-├── build/                   # Build artifacts (created automatically)
-│   └── *.obj               # Object files
-├── examples/               # Example Flux programs
-│   ├── hello.flux         # Basic hello world
-│   ├── fibonacci.flux     # Recursive fibonacci
-│   └── advanced.flux      # Advanced features demo
-├── flux-website/           # Website for downloading
-│   ├── index.html         # Main website page
-│   ├── styles.css         # Professional styling
-│   ├── script.js          # Download functionality
-│   └── flux-lang.zip      # Complete source package
-├── build.bat              # Windows build script
-├── clean.bat              # Windows clean script
-├── Makefile              # Unix build system
-├── .gitignore            # Git ignore file
-└── README.md             # This file
-```
-
-## Building and Running
 
 ### Prerequisites
 - C++17 compatible compiler (g++, clang++, or MSVC)
