@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Programming Language - Modern Expressive Language</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <div class="logo-icon">⚡</div>
+                <span class="logo-text">Flux</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#examples">Examples</a>
+                <a href="#documentation">Docs</a>
+                <a href="#download" class="nav-download">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    The <span class="highlight">Flux</span> Programming Language
+                </h1>
+                <p class="hero-subtitle">
+                    A modern, expressive programming language showcasing complete interpreter implementation. 
+                    Built with dynamic typing, first-class functions, and clean syntax.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="downloadBtn">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Flux
+                    </button>
+                    <a href="#examples" class="btn btn-secondary">See Examples</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Core Components</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">C++17</span>
+                        <span class="stat-label">Built With</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">REPL</span>
+                        <span class="stat-label">Interactive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Flux?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Dynamic Typing</h3>
+                        <p>Variables can hold numbers, strings, booleans, or functions with automatic type inference.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>First-Class Functions</h3>
+                        <p>Functions are values that can be passed around, returned, and stored with full closure support.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Clean Syntax</h3>
+                        <p>Readable, expressive syntax that's easy to learn and write, inspired by modern languages.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛠️</div>
+                        <h3>Complete Implementation</h3>
+                        <p>Full lexer-parser-interpreter pipeline demonstrating language design principles.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3>Interactive REPL</h3>
+                        <p>Test code immediately with an interactive read-eval-print loop for rapid development.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Educational</h3>
+                        <p>Perfect for learning language implementation, compiler theory, and interpreter design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Examples Section -->
+        <section id="examples" class="examples">
+            <div class="container">
+                <h2 class="section-title">Code Examples</h2>
+                <div class="code-examples">
+                    <div class="code-example">
+                        <h3>Variables & Functions</h3>
+                        <pre><code>// Variables with dynamic typing
+let name = "Flux"
+let version = 1.0
+let isActive = true
+
+// First-class functions
+fun greet(name) {
+    return "Hello, " + name + "!"
+}
+
+print greet("World")  // Hello, World!</code></pre>
+                    </div>
+                    
+                    <div class="code-example">
+                        <h3>Control Flow</h3>
+                        <pre><code>// Conditional statements
+if (version >= 1.0) {
+    print "Stable release!"
+} else {
+    print "Beta version"
+}
+
+// Loops and recursion
+fun factorial(n) {
+    if (n <= 1) return 1
+    return n * factorial(n - 1)
+}
+
+print factorial(5)  // 120</code></pre>
+                    </div>
+                    
+                    <div class="code-example">
+                        <h3>Closures & Advanced Features</h3>
+                        <pre><code>// Closures and lexical scoping
+fun makeCounter() {
+    let count = 0
+    fun increment() {
+        count = count + 1
+        return count
+    }
+    return increment
+}
+
+let counter = makeCounter()
+print counter()  // 1
+print counter()  // 2
+
+// Built-in functions
+print sqrt(16)   // 4
+print abs(-42)   // 42</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="documentation" class="documentation">
+            <div class="container">
+                <h2 class="section-title">Getting Started</h2>
+                <div class="docs-grid">
+                    <div class="docs-card">
+                        <h3>1. Download & Build</h3>
+                        <p>Download the source code and build with the included build scripts.</p>
+                        <div class="code-block">
+                            <code>./build.bat    # Windows<br>make all       # Unix/Linux</code>
+                        </div>
+                    </div>
+                    <div class="docs-card">
+                        <h3>2. Interactive Mode</h3>
+                        <p>Start the REPL to experiment with Flux interactively.</p>
+                        <div class="code-block">
+                            <code>./flux.exe     # Start REPL</code>
+                        </div>
+                    </div>
+                    <div class="docs-card">
+                        <h3>3. Run Scripts</h3>
+                        <p>Execute Flux programs from files with example programs included.</p>
+                        <div class="code-block">
+                            <code>./flux.exe examples/hello.flux</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download">
+            <div class="container">
+                <h2 class="section-title">Download Flux</h2>
+                <div class="download-content">
+                    <div class="download-info">
+                        <h3>Complete Source Package</h3>
+                        <p>Get the full Flux programming language implementation including:</p>
+                        <ul>
+                            <li>Complete C++ source code</li>
+                            <li>Lexer, Parser, and Interpreter</li>
+                            <li>Build scripts for Windows and Unix</li>
+                            <li>Example programs and documentation</li>
+                            <li>Interactive REPL support</li>
+                        </ul>
+                    </div>
+                    <div class="download-box">
+                        <div class="download-header">
+                            <h4>Flux Programming Language</h4>
+                            <span class="version">v1.0</span>
+                        </div>
+                        <div class="download-stats">
+                            <div class="stat">
+                                <span class="stat-label">Size</span>
+                                <span class="stat-value" id="fileSize">~50KB</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Platform</span>
+                                <span class="stat-value">Cross-platform</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-download" id="mainDownloadBtn">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7,10 12,15 17,10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download flux-lang.zip
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <div class="logo-icon">⚡</div>
+                        <span class="logo-text">Flux</span>
+                    </div>
+                    <p>A modern programming language showcasing interpreter implementation.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-section">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Dynamic Typing</li>
+                            <li>First-Class Functions</li>
+                            <li>Interactive REPL</li>
+                            <li>Clean Syntax</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>Documentation</li>
+                            <li>Examples</li>
+                            <li>Source Code</li>
+                            <li>Build Guide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flux Programming Language. Educational project demonstrating language design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
